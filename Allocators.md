@@ -2,10 +2,10 @@
 Для управления памятью в C++ STL используется специальный шаблонный класс - `std::allocator`. До С++11 аллокаторы не имели состояния (`stateless allocators`).
 Т.е. всегда выполнялось:
 ```
-    CustomAllocator<T> a;
-    CustomAllocator<T> b;
+CustomAllocator<T> a;
+CustomAllocator<T> b;
     
-    assert(a == b); // - always true
+assert(a == b); // - always true
 ```
 
 
