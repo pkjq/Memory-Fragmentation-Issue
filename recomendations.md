@@ -44,7 +44,7 @@ struct ScopedDeleterFunctor
     auto operator() (T *obj) { return ...; }
 };
 
-std::unique_ptr<T, ScopedDeleterFunctor> scoped { std::make_unique<T>() };
+std::unique_ptr<T, ScopedDeleterFunctor> scoped { new T };
 ```
 
 Несмотря на всю новомодность решения с lambda, оно является тяжеловесным. В чем конкретно это выражается можно почитать [здесь](functorVSlambda.md).
