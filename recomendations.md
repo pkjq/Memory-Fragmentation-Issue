@@ -38,7 +38,7 @@
 std::unique_ptr<T, std::function<void(T*)>> scoped{new T, [](auto *obj) {...}};
 ```
 
-Вместо этого правильнее в этом случае использовать функтор:
+Вместо этого оптимальнее в этом случае использовать функтор:
 ```
 struct ScopedDeleterFunctor
 {
