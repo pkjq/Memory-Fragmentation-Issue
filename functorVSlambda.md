@@ -20,7 +20,7 @@ class _Func_class
     union _Storage
     {
         ...
-        _Ptrt *_Ptrs[_Small_object_num_ptrs];	// _Ptrs[_Small_object_num_ptrs - 1] is reserved and contains pointer to _Func_impl_XXX<...>
+        _Ptrt *_Ptrs[_Small_object_num_ptrs];
     };
 };
 
