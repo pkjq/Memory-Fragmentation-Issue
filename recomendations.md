@@ -47,5 +47,4 @@ struct ScopedDeleterFunctor
 std::unique_ptr<T, ScopedDeleterFunctor> scoped { std::make_unique<T>() };
 ```
 
-Несмотря на всю новомодность решения с lambda, оно является тяжеловесным.
-В чем разница можно почитать [здесь](http://).
+Несмотря на всю новомодность решения с lambda, оно является тяжеловесным. В чем конкретно это выражается можно почитать [здесь](functorVSlambda.md).
