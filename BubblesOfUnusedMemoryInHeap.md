@@ -43,7 +43,7 @@ void Func()
 Ко всему прочему heap может и не возвращать память ОС, т.е. commited size процесса будет велик. И это As Designed [по словам MS](https://support.microsoft.com/en-my/help/3073576/heap-manager-may-not-decommit-memory-after-memory-is-freed).
 
 
-
+#### std::pmr::vector
 Теперь попробуем использовать std::pmr::vector из **C++17**:
 ```
 void FuncPmr()
@@ -82,6 +82,7 @@ sizeof(std::vector<uint8_t>)      = 12
 Правда здесь свободной памяти побольше, но и занято - меньше. Т.е. проблему это не решает.
 
 
+#### std::pmr::vector + resource pool
 Теперь попробуем использовать для аллокаций `resource pool`:
 ```
 void FuncPmrWithPool()
