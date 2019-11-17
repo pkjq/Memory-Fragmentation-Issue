@@ -25,11 +25,11 @@
 
 Когда `shared_ptr` создан вызовом `std::make_shared` или `std::allocate_shared`, *control block* содержит сам объект `T`, в качестве члена структуры данных.
 
-![](shared_ptr-make_shared.png)
+![](data/shared_ptr-make_shared.png)
 
 Когда указатель `shared_ptr` создан вызовом его конструктора, *control block* содержит указатель на объект `T`.
 
-![](shared_ptr-by_ctro.png)
+![](data/shared_ptr-by_ctro.png)
 
 Т.е. в этом случае происходит на 1 аллокацию больше.
 

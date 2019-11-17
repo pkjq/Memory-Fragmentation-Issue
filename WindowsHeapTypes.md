@@ -4,7 +4,7 @@
 ### NT Heap
 Данный тип может иметь дополнительную интерфейсную прослойку - **LFH** (Low Fragmentation Heap).
 
-![](LFH-Russinovich.png)
+![](data/LFH-Russinovich.png)
 
 В Windows до WinXP & WinServer2003 включительно для включения LFH необходимо использовать функцию [HeapSetInformation](https://docs.microsoft.com/en-us/windows/win32/api/heapapi/nf-heapapi-heapsetinformation). Во всех последующих версиях Windows она включена по умолчанию, за исключением некоторых случаев:
 * Если heap создается с флагом `HEAP_NO_SERIALIZE`.
