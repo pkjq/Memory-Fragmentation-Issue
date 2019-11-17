@@ -102,3 +102,5 @@ KERNELBASE!HeapCreate+0x23ba0:
 ![](heap+reserved-zebra.PNG)
 
 Как видно из картинки, аллокации свыше запрошенного резерва осуществляются по прежней схеме.
+
+**PoC** - https://github.com/pkjq/PoC.HeapReserve
